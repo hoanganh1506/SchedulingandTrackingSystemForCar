@@ -6,3 +6,5 @@ Hệ thống đặt lịch và theo dõi tiến trình sửa chữa cho xe ô t�
 Sử dụng: JavaFX, Scene Builder, phpadmin làm database (JDBC MySQL) 
 
 Biên dịch trên Netbeans IDE 8.2, Java8
+
+Database là file database stsc.sq được dùng để tạo database trên phpadmin
