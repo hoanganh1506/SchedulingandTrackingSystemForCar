@@ -7,4 +7,4 @@ Sử dụng: JavaFX, Scene Builder, phpadmin làm database (JDBC MySQL)
 
 Biên dịch trên Netbeans IDE 8.2, Java8
 
-Database là file database stsc.sq được dùng để tạo database trên phpadmin
+Database là file database stsc.sql được dùng để tạo database trên phpadmin
