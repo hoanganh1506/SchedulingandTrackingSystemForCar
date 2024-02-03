@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stsc_new.InsertServicesFormController">
+   <children>
+      <AnchorPane prefHeight="507.0" prefWidth="698.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="534.0" prefWidth="510.0" stylesheets="@../design/EmployeeMainFormDesign.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="362.0" AnchorPane.topAnchor="13.0">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="header-2" stylesheets="@../design/EmployeeMainFormDesign.css" text="Service Information">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="service_ConfirmBtn" layoutX="97.0" layoutY="410.0" mnemonicParsing="false" onAction="#serviceConfirmBtn" prefHeight="40.0" prefWidth="210.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Confirm" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="208.0" />
+                  <Label layoutX="64.0" layoutY="97.0" text="Service ID:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="services_serviceID" layoutX="133.0" layoutY="94.0" prefHeight="25.0" prefWidth="112.0" promptText="Ex. CTD" styleClass="textfield-2" stylesheets="@../design/EmployeeMainFormDesign.css" />
+                  <Label layoutX="85.0" layoutY="170.0" text="Name:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="services_serviceName" layoutX="133.0" layoutY="167.0" prefHeight="25.0" prefWidth="144.0" promptText="Ex. Cong thay dau" styleClass="textfield-2" stylesheets="@../design/EmployeeMainFormDesign.css" />
+                  <Label layoutX="70.0" layoutY="240.0" text="Describe:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="services_serviceDepict" alignment="TOP_LEFT" layoutX="132.0" layoutY="240.0" prefHeight="82.0" prefWidth="310.0" promptText="Ex. Thay dau cho xe" styleClass="textfield-2" stylesheets="@../design/EmployeeMainFormDesign.css" />
+                  <Label layoutX="311.0" layoutY="96.0" text="Unit:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="services_serviceUnit" layoutX="352.0" layoutY="94.0" prefHeight="23.0" prefWidth="144.0" promptText="Select service unit" styleClass="textfield-1" stylesheets="@../design/PageDesign.css" />
+                  <Label layoutX="312.0" layoutY="170.0" text="Price:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="services_servicePrice" layoutX="352.0" layoutY="167.0" prefHeight="25.0" prefWidth="144.0" promptText="Ex. 400000" styleClass="textfield-2" stylesheets="@../design/EmployeeMainFormDesign.css" />
+                  <Button fx:id="services_cancelBtn" layoutX="390.0" layoutY="410.0" mnemonicParsing="false" onAction="#cancelBtn" prefHeight="40.0" prefWidth="70.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Cancel" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="539.0" layoutY="11.2" prefHeight="482.0" prefWidth="334.0" stylesheets="@../design/EmployeeMainFormDesign.css" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="header-2" stylesheets="@../design/EmployeeMainFormDesign.css" text="Confirm Service Information">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="37.0" layoutY="115.0" text="Name:" />
+                  <Label fx:id="services_CI_serviceName" layoutX="120.0" layoutY="115.0" prefHeight="18.0" prefWidth="144.0" />
+                  <Button fx:id="service_AddBtn" layoutX="117.0" layoutY="410.0" mnemonicParsing="false" onAction="#AddBtn" prefHeight="36.0" prefWidth="97.0" styleClass="btn-1" stylesheets="@../design/PageDesign.css" text="Add" AnchorPane.bottomAnchor="34.00000000000006" AnchorPane.leftAnchor="117.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" />
+                     </graphic>
+                  </Button>
+                  <Label layoutX="37.0" layoutY="162.0" text="Unit:" />
+                  <Label fx:id="services_CI_serviceUnit" layoutX="120.0" layoutY="161.0" prefHeight="18.0" prefWidth="144.0" />
+                  <Label layoutX="37.0" layoutY="213.0" text="Price:" />
+                  <Label fx:id="services_CI_servicePrice" layoutX="120.0" layoutY="212.0" prefHeight="18.0" prefWidth="144.0" />
+                  <Label layoutX="37.0" layoutY="70.0" text="Service ID:" />
+                  <Label fx:id="services_CI_serviceID" layoutX="165.0" layoutY="70.0" prefHeight="17.0" prefWidth="98.0" />
+                  <Label layoutX="37.0" layoutY="253.0" prefHeight="18.0" prefWidth="70.0" text="Describe:" />
+                  <Label fx:id="services_CI_serviceDepict" layoutX="120.0" layoutY="253.0" prefHeight="112.0" prefWidth="190.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
